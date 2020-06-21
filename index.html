@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>Sidebar - Sample</title>
+
+  <!-- Bootstrap core CSS -->
+  <!-- <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet"> -->
+  <link href="css/bootstrap.css" rel="stylesheet">
+
+  <!-- Custom styles for this template -->
+  <link href="css/simple-sidebar.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <div class="d-flex" id="wrapper">
+
+    <!-- Sidebar -->
+    <div class="bg-light border-right" id="sidebar-wrapper">
+      <div class="sidebar-heading">Sample </div>
+      <div class="list-group list-group-flush">
+        <!-- <div class="menu">
+          <a  id="showall">All</a>
+          <a  class="showSingle" target="1" >Div 1</a>
+          <a  class="showSingle" target="2">Div 2</a>
+          <a  class="showSingle" target="3">Div 3</a>
+          <a  class="showSingle" target="4">Div 4</a>
+          </div> -->
+          
+        <a href="#" id="showall" class="list-group-item list-group-item-action bg-light">Home</a>
+        <!-- <a href="#dashboard" class="list-group-item list-group-item-action bg-light showSingle" data-toggle="collapse" target="1"> Dashboard</a> -->
+        <a href="#page1" class="list-group-item list-group-item-action bg-light showSingle" data-toggle="collapse" target="2">Page1</a>
+        <a href="#page2" class="list-group-item list-group-item-action bg-light showSingle" data-toggle="collapse" target="3">Page2</a>
+        <a href="#location" class="list-group-item list-group-item-action bg-light showSingle" data-toggle="collapse" target="4">Location</a>
+        <a href="#aboutus" class="list-group-item list-group-item-action bg-light showSingle" data-toggle="collapse" target="5" >About us</a>
+        <a href="#contactus" class="list-group-item list-group-item-action bg-light showSingle" data-toggle="collapse" target="6">Contact us</a>
+      </div>
+    </div>
+    <!-- /#sidebar-wrapper -->
+
+    <!-- Page Content -->
+    <div id="page-content-wrapper">
+
+      <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom">
+        <button class="btn btn-primary" id="menu-toggle"><<</button>
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+            <li class="nav-item active">
+              <!-- <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a> -->
+              <a href="#" id="showhome" class="nav-link">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <!-- <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li> -->
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Dropdown
+              </a>
+              <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                <!-- <a class="dropdown-item" href="#shortcuts">Shortcuts</a> -->
+                <a href="#page1" class="dropdown-item showSingle" data-toggle="collapse" target="2">Page 1</a>
+                <a href="#page2" class="dropdown-item showSingle" data-toggle="collapse" target="3">Page 2</a>
+                <!-- <a class="dropdown-item" href="#overview">Overview</a> -->
+                <div class="dropdown-divider"></div>
+                <!-- <a class="dropdown-item" href="#">Something else here</a> -->
+                <a href="#location" class="dropdown-item showSingle" data-toggle="collapse" target="4">Location</a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+      <section class="cnt" >
+        <div id="div1" class="targetDiv">  
+          <!-- <h1 class="mt-4">Dashboard</h1>
+          <p>This is Dashboard page.</p> -->
+        </div>
+
+        <div id="div2" class="targetDiv">
+          <h1 class="mt-4">Page 1</h1>
+          <p>This is Page 1.</p>
+
+        </div>
+        <div id="div3" class="targetDiv">
+          <h1 class="mt-4">Page2</h1>
+          <p>This is Page 2.</p>
+
+        </div>
+        <div id="div4" class="targetDiv">
+          <h1 class="mt-4">Location</h1>
+          <p>This is Location page.</p>
+
+        </div>
+        <div id="div5" class="targetDiv">
+          <h1 class="mt-4">About us</h1>
+          <p>This is About us page.</p>
+
+        </div>
+        <div id="div6" class="targetDiv">
+          <h1 class="mt-4">Contact us</h1>
+          <p>This is Contact us page.</p>
+
+        </div>
+        </section>
+
+<!--         
+      <div id="main" class="main-container">
+        <h1 class="mt-4">Main</h1>
+        <p>This is Main page.</p>
+      
+    </div>
+      <div id="home" class="main-container collapse in">
+        <h1 class="mt-4">Home</h1>
+        <p>This is Home page.</p>
+    </div>
+    <div id="dashboard" class="main-container collapse">
+      <h1 class="mt-4">Dashboard</h1>
+      <p>This is Dashboard page.</p>
+    </div>
+
+    <div id="overview" class="main-container collapse">
+      <h1 class="mt-4">Overview</h1>
+      <p>This is Overview page.</p>
+    </div> -->
+
+      <!-- <div class="container-fluid"  >
+        
+        <h1 class="mt-4">Simple Sidebar</h1>
+        <p>The starting state of the menu will appear collapsed on smaller screens, and will appear non-collapsed on larger screens. When toggled using the button below, the menu will change.</p>
+        <p>Make sure to keep all page content within the <code>#page-content-wrapper</code>. The top navbar is optional, and just for demonstration. Just create an element with the <code>#menu-toggle</code> ID which will toggle the menu when clicked.</p>
+      
+      </div>
+
+      <div class="container-fluid" id="dashboard" class="main-container collapse in" >
+        <div >
+        <h1 class="mt-4">Dashboard</h1>
+        <p>The starting state of the menu will appear collapsed on smaller screens, and will appear non-collapsed on larger screens. When toggled using the button below, the menu will change.</p>
+        <p>Make sure to keep all page content within the <code>#page-content-wrapper</code>. The top navbar is optional, and just for demonstration. Just create an element with the <code>#menu-toggle</code> ID which will toggle the menu when clicked.</p>
+      </div>
+      </div> -->
+
+    </div>
+    <!-- /#page-content-wrapper -->
+
+  </div>
+  <!-- /#wrapper -->
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="js/jquery.js"></script>
+  <script src="Js/bootstrap.bundle.js"></script>
+
+  <!-- Menu Toggle Script -->
+  <script>
+    $("#menu-toggle").click(function(e) {
+      e.preventDefault();
+      $("#wrapper").toggleClass("toggled");
+    });
+
+    $(function(){
+               $('#showall').click(function(){
+               $('.targetDiv').show();
+        });
+        $('#showhome').click(function(){
+               $('.targetDiv').show();
+        });
+
+        $('.showSingle').click(function(){
+              $('.targetDiv').hide();
+              $('#div'+$(this).attr('target')).show();
+        });
+});
+  </script>
+
+</body>
+
+</html>
